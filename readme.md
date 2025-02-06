@@ -50,7 +50,7 @@ FakePrinter simulates a printing process where each layer (with its associated m
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ShivamShah1/Fake_Printer
    cd FakePrinter
 
 ```bash
@@ -59,9 +59,13 @@ pip install pandas
 pip install aiohttp
 ```
 
+- Normal is normal code, it will only load the data when the user calls for it.
+- Smart_driver is for async method which will call the data before the user ask for faster implementation of the process. This is the faster ways.
+ 
 Usage
 ```bash
-python smart_driver.py <print_name> <output_folder> <mode> <csv_file> 
+python3 normal_driver.py normal normal_folder automatic data.csv 
+python3 smart_driver.py smart smart_folder supervised data.csv 
 ```
 
 ## Architecture and Optimization Details
